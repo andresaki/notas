@@ -87,6 +87,8 @@ JAVA SCRIPT
     acceeder al ultimo caracter de la cadena
     console.log(cadena[cadena.length - 1])
 
+- arreglos
+
 
 
 
