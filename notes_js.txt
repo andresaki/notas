@@ -87,6 +87,69 @@ JAVA SCRIPT
     acceeder al ultimo caracter de la cadena
     console.log(cadena[cadena.length - 1])
 
+- import y export
+    se utiliza para intercabiar funciones datos etc
+
+    - importacion normal
+        export    ===> se pone el archivo externo al principio
+        import {'variable'} from ruta  ===> en el main
+
+    - importacion por defecto
+        1. export default 'variable'  ===> al final del archivo
+           import variable from ruta ==> main
+
+        2. no declarar variable embes de eso se le pone <== export defaul al principio
+           import variable from ruta ==> main
+
+    - import / export individual
+        se le pone export antes de la variablet y se importa de la siguiente manera
+
+        import variable {variable} from ruta
+                    |       | 
+                defaul     individual
+
+- array
+    ~ podemos guardar varios datos en un solo espacio
+        const sandwich = ["jamon" , " pan" , " queso" , "salsa"]
+        const estudiantes = [ "dannna salome" , "sofia" , "sara"]
+
+    ~ tambien se puede anidar arreglos dentro de un arreglos
+        const equipos = [[1, "salud"] , [2 , "mediacamentos"] , [3, "atencion"]]
+
+    ~ acceder a un elemeto de un array
+        estudiantes[0]   //danna salome
+
+    ~ modificar un elemento de un array
+        estudiante[0] = "laura"   
+
+    ~ acceder a un elemeto de un array anidado
+        const arr = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9],
+            [[10, 11, 12], 13, 14]
+        ];
+
+        const subarray = arr[3];
+        const nestedSubarray = arr[3][0];
+        const element = arr[3][0][1];
+
+        En este ejemplo, subarray tiene el valor [[10, 11, 12], 13, 14], nestedSubarray tiene el valor [10, 11, 12], y element tiene el valor 11.
+
+    ~ eliminar el ultimo elemento de un array
+        estudiantes.pop()
+
+    ~ eliminar el primer elemnto de un array
+        estudiantes.shift()
+    
+    ~ poner un dato en la ultima pocision
+        estudiantes.pop("daniel")
+
+    ~ poner un dato en la primera pocision
+        estudiantes.unshift("daniel")
+        
+
+
 
 
 

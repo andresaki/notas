@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+body {
+    margin: 0;
+
+    /* imagen de fondo */
+    background-image: url(https://fondosmil.com/fondo/29366.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+
+}
+
+header {
+    text-align: center;
+    margin: 50px auto 0;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+
+form {
+    max-width: 630px;
+    min-width: 500px;
+    background-color: rgba(11, 11, 50, 0.845);
+    margin: auto;
+    padding: 45px;
+    border-radius: 5px;
+}
+
+#inputs input,
+select {
+    display: block;
+    min-height: 35px;
+    width: 100%;
+    margin: 5px 0 15px 0;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 1.1rem;
+}
+
+.radios label,
+.checkboxs label,
+textarea {
+    display: block;
+    width: 100%;
+
+}
+
+.espaciado {
+    margin: 10px 0 0 20px
+}
+
+label {
+    font-size: 1rem;
+}
+
+input:focus {
+    border-color: rgb(247, 0, 255);
+    outline: 0;
+}
+
+#selects,
+.radios,
+.checkboxs,
+.descripcion {
+    margin-top: 50px;
+}
+
+button {
+    padding: 5px;
+    
+    border: none;
+    border-radius: 5px;
+    background-color: aqua;}

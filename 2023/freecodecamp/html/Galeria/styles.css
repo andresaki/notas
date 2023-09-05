@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f5f6f7;
+}
+
+.header{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    background-color: #0a0a23;
+    color:#fff;
+    border-bottom: solid 4px #fdb347;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: row; /*direccion del eje principal*/
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+    /*gap = se encarga de manejar los canales o espaciados entre columnas y filoas sirve para flex y todo tipo de colmlinea*/
+    gap: 16px;
+}
+
+.gallery::after{
+    content: "";
+    width: 350px;
+}
+
+.gallery img{
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover; /*como cada imagen tiene diferente dimensiones y se disterciona entonces colocamos object-fit: cover para que llene o se expanda la imagen en el contenedor*/
+    border-radius: 10px;
+}

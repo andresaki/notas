@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey-form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <form action="" id="survey-form">
+
+        <div id="inputs">
+            <label id="name-label" for="name">Name <input type="text" id="name" required placeholder="nombre"> </label>
+            <label id="email-label" for="email">Email <input type="email" id="email" required placeholder="email"> </label>
+            <label id="number-label" for="number">Age <input type="number" min="1" max="100" id="number" placeholder="edad" > </label>
+        </div>
+
+        <div id="selects">
+            <label> Que rol?</label>
+            <select name="rol" id="dropdown">
+                <option value="">seleccione una</option>
+                <option value="1">administrador</option>
+                <option value="2">cliente</option>
+            </select>
+        </div>
+
+        <div class="radios">
+            <label>Genero</label>
+
+            <label class="espaciado" for="masculino"><input name="genero" id="masculino" type="radio" checked >Masculino</label>
+            <label class="espaciado" for="femenino"><input name="genero" id="femenino" type="radio">Femenino</label>
+            <label class="espaciado" for="otro"><input name="genero" id="otro" type="radio">Otro</label>
+        </div>
+
+        <div class="checkboxs">
+            <label>ocupacion</label>
+
+            <label class="espaciado" for="masculino"><input value="masculino" id="masculino" type="checkbox">estudiante</label>
+            <label class="espaciado" for="femenino"><input value="femenino" id="femenino" type="checkbox">trabajador</label>
+            <label class="espaciado" for="otro"><input value="otro" id="otro" type="checkbox">pensionado</label>
+        </div>
+
+        <div class="descripcion">
+            <label for="descripcion"> descripcion <textarea name="descripcion" id="descripcion" cols="60" rows="3"></textarea></label>
+        </div>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+
+
+
+
+
+</body>
+</html>
