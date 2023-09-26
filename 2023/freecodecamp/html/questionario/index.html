@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questionario</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <img id="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg">
+    <h1>HTML/CSS Quiz</h1>
+    <nav>
+      <ul>
+        <li><a href="#student-info">INFO</a></li>
+        <li><a href="#html-questions">HTML</a></li>
+        <li><a href="#css-questions">CSS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+      <section role="region" aria-labelledby="student-info">
+        <h2 id="student-info">student-info</h2>
+
+        <div class="info">
+          <label for="name">name</label>
+          <input id="name" type="text" name="name">
+        </div>
+
+        <div class="info">
+          <label for="email">email</label>
+          <input id="email" type="email" name="email">
+        </div>
+
+        <div class="info">
+          <label for="date">date <span class="sr-only">(Date of Birth)</span></label>
+          <input id="date" type="date" name="date">
+        </div>
+
+      </section>
+      <!-- --------------------------------------------------------------------------------- -->
+      <section role="region" aria-labelledby="html-questions">
+        <h2 id="html-questions">HTML</h2>
+
+        <div class="question-block">
+
+          <p>1</p>
+
+          <fieldset name="one" class="question">
+            <legend>The legend element represents a caption for the content of its parent fieldset element</legend>
+            <ul class="answers-list">
+              <li>
+                <label for="q1-a1">
+                  <input type="radio" value="true" id="q1-a1" name="one">true
+                </label>
+              </li>
+              <li>
+                <label for="q1-a2">
+                  <input type="radio" value="false" id="q1-a2" name="one">false
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+        </div>
+
+        <!-- ---------------------------------------- -->
+        <div class="question-block">
+          <p>2</p>
+
+          <fieldset name="two" class="question">
+            <legend>A label element nesting an input element is required to have a for attribute with the same value as
+              the input's id</legend>
+            <ul class="answers-list">
+              <li>
+                <label for="q2-a1">
+                  <input type="radio" value="true" id="q2-a1">true
+                </label>
+              </li>
+              <li>
+                <label for="q2-a2">
+                  <input type="radio" value="false" id="q2-a2">false
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+      </section>
+
+
+
+      <section role="region" aria-labelledby="css-questions">
+        <h2 id="css-questions">css</h2>
+      </section>
+    </form>
+  </main>
+</body>
+
+</html>

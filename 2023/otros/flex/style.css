@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.cuadro{
+    border-radius: 15px;
+    
+}
+
+.uno{
+    background-color: darkorange;
+    width: 300px;
+    height: 300px;
+}
+
+.dos{
+    background-color:darkturquoise;
+    width: 200px;
+    height: 200px;
+}
+
+.tres{
+    background-color:darkorchid;
+    width: 200px;
+    height: 200px;
+}
