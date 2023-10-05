@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    border: none;
+}
+
+body{
+    margin-left: 80px;
+    transition: margin-left 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+/* header */
+    header{
+        width: 100%;
+        height: 80px;
+        background-color: #f5f5f5;
+        display: flex;
+        align-items: center;   /*alinie el contenido verticalmente al centro*/
+        position: fixed ; /*posicion fija a top 0*/
+        top: 0;
+        z-index: 200; /*para que sobresalga o un capa mas que los otros elementos*/
+    }
+
+    /* contenedor del boton > svg */
+        .boton-menu{
+            transform: translateX(10px);
+            width: 50px;
+            height: 100%;  /*que ocupe el 100% del header*/
+            display: flex;  /*para lo que adentro sea flexibo*/
+            justify-content: center;  /*horizontal: center*/
+            align-items: center;  /*vertical: center*/
+            
+        }
+
+        .boton-menu svg{
+            height: 20px;  /*tamño del svg*/
+            cursor: pointer;
+            position: absolute;  /*para tener un libre movimiento de este*/
+            margin-left: 10px;
+        }
+
+
+
+/* menu */
+
+.menu{
+    position: fixed; 
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 80px;
+    font-size: 18px;
+    background-color: mediumpurple;
+    z-index: 300;
+    overflow: hidden;
+    overflow-y: scroll;
+    color: #fff;
+    border-right: solid 20px mediumpurple;
+    transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+/* ocultar scroll en chrome saFARI OPERA */
+.menu::-webkit-scrollbar{
+    display: none;
+}
+
+/* ocultar scrool em edge .... */
+.menu{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+
+
+
+.usuario{
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    position: absolute;
+    /* background-color:royalblue; */
+}
+
+.usuario svg{
+    /* width: 20px;0 */
+    margin-right: 20px;
+}
+
+/* opciones menu */
+
+.opciones-menu{
+    padding: 20px 30px;
+    position: absolute;
+    top: 90px;
+}
+
+.opciones-menu a{
+    color: #ffffffb2;
+    cursor: default;
+    display: block;
+    position: relative;
+    transition:  color 0.3s;
+}
+
+.opciones-menu a:hover{
+    color: white;
+}
+
+.opciones-menu .opcion{
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.opciones-menu .opcion svg{
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.opciones-menu .opcion h4{
+    font-weight: 300;
+    cursor: pointer;
+}
+
+a.opcion-seleccionada{
+    color: #fff;
+}
+
+.opcion-seleccionada:before{
+    content: '';  /*que eel contenido comienze en blanco*/
+    width: 3px;
+    height: 80%;
+    background-color: #fff;
+    position: absolute;
+    top: 10%;
+    left: -30px;
+}
+
+main{
+    margin: 80px 0 0 0 ;
+    padding: 20px;
+}
+
+/* clases par ajavascript */
+
+.body_move{
+    margin-left: 250px;
+}
+
+.menu_move{
+    width: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

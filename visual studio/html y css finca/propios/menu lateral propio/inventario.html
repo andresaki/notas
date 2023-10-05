@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu lateral intento propio</title>
+
+    <!-- archvos externos -->
+    <link rel="stylesheet" href="styles.css">
+    <script  defer src="script.js"></script>
+</head>
+
+<body id="body" >
+
+    <!-- header -->
+    <header>
+        <button title= " menu " id="boton-menu">
+            <!-- icono svg-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24">
+                <path
+                    d="M20 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zM4 19V7h6v12H4zm8 0V7h8V5l.002 14H12z" />
+                <path d="M6 10h2v2H6zm0 4h2v2H6z" />
+            </svg>
+        </button>
+    </header>
+
+
+    <!-- menu -->
+    <div class="menu" id="menu">
+
+        <!-- usuario -->
+        <div class="usuario">
+            <!-- icono svg-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" contenteditable="">
+                <path d="M12 2A10.13 10.13 0 0 0 2 12a10 10 0 0 0 4 7.92V20h.1a9.7 9.7 0 0 0 11.8 0h.1v-.08A10 10 0 0 0 22 12 10.13 10.13 0 0 0 12 2zM8.07 18.93A3 3 0 0 1 11 16.57h2a3 3 0 0 1 2.93 2.36 7.75 7.75 0 0 1-7.86 0zm9.54-1.29A5 5 0 0 0 13 14.57h-2a5 5 0 0 0-4.61 3.07A8 8 0 0 1 4 12a8.1 8.1 0 0 1 8-8 8.1 8.1 0 0 1 8 8 8 8 0 0 1-2.39 5.64z" />
+                <path d="M12 6a3.91 3.91 0 0 0-4 4 3.91 3.91 0 0 0 4 4 3.91 3.91 0 0 0 4-4 3.91 3.91 0 0 0-4-4zm0 6a1.91 1.91 0 0 1-2-2 1.91 1.91 0 0 1 2-2 1.91 1.91 0 0 1 2 2 1.91 1.91 0 0 1-2 2z" />
+            </svg>
+            <!-- nombre usuario -->
+            <h4>ConfeccionX</h4>
+        </div>
+
+
+        <!-- opciones del menu -->
+        <div class="opciones-menu">
+
+            <!-- 1. dashboard -->
+            <a href="index.html"  title="Dashboard">
+                <div class="opcion ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" a>
+                        <path d="M4 13h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1zm-1 7a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v4zm10 0a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-7a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v7zm1-10h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1z" />
+                    </svg>
+                    <h4>Dashboard</h4>
+                </div>
+            </a>
+
+
+            <!-- 2. Clientes -->
+            <a href="#" title="Clientes">
+                <div class="opcion">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"><path d="M15 11h7v2h-7zm1 4h6v2h-6zm-2-8h8v2h-8zM4 19h10v-1c0-2.757-2.243-5-5-5H7c-2.757 0-5 2.243-5 5v1h2zm4-7c1.995 0 3.5-1.505 3.5-3.5S9.995 5 8 5 4.5 6.505 4.5 8.5 6.005 12 8 12z"/></svg>
+                    <h4>Clientes</h4>
+                </div>
+            </a>
+
+
+            <!-- 3. pedidos -->
+            <a href="#" title="Pedidos">
+                <div class="opcion">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"><path d="M5 22h14c1.103 0 2-.897 2-2V9a1 1 0 0 0-1-1h-3V7c0-2.757-2.243-5-5-5S7 4.243 7 7v1H4a1 1 0 0 0-1 1v11c0 1.103.897 2 2 2zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v1H9V7zm-4 3h2v2h2v-2h6v2h2v-2h2l.002 10H5V10z"/></svg>
+                    <h4>Pedidos</h4>
+                </div>
+            </a>
+
+
+            <!-- 4. calendario -->
+            <a href="#" title="Calendar">
+                <div class="opcion">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"><path d="M7 11h2v2H7zm0 4h2v2H7zm4-4h2v2h-2zm0 4h2v2h-2zm4-4h2v2h-2zm0 4h2v2h-2z"/><path d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zM19 8l.001 12H5V8h14z"/></svg>
+                    <h4>Calendario</h4>
+                </div>
+            </a>
+
+
+            <!-- 5. inventario -->
+            <a href="#" title="Inventario" class="opcion-seleccionada">
+                <div class="opcion">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"><path d="M21 5c0-1.103-.897-2-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V5zM5 19V5h14l.002 14H5z"/><path d="M7 7h1.998v2H7zm4 0h6v2h-6zm-4 4h1.998v2H7zm4 0h6v2h-6zm-4 4h1.998v2H7zm4 0h6v2h-6z"/></svg>
+                    <h4>Inventario</h4>
+                </div>
+            </a>
+
+
+            <!-- 6. contabilidad -->
+            <a href="#" title="Contabilidad">
+                <div class="opcion">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"><path d="M12 15c-1.84 0-2-.86-2-1H8c0 .92.66 2.55 3 2.92V18h2v-1.08c2-.34 3-1.63 3-2.92 0-1.12-.52-3-4-3-2 0-2-.63-2-1s.7-1 2-1 1.39.64 1.4 1h2A3 3 0 0 0 13 7.12V6h-2v1.09C9 7.42 8 8.71 8 10c0 1.12.52 3 4 3 2 0 2 .68 2 1s-.62 1-2 1z"/><path d="M5 2H2v2h2v17a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4h2V2H5zm13 18H6V4h12z"/></svg>
+                    <h4>Contabilidad</h4>
+                </div>
+            </a>
+
+
+
+        </div>  <!-- cierre de div opciones del menu  -->
+
+
+    </div>  <!-- cierre de div del menu  -->
+
+
+    <main>
+
+        <h1>inventario</h1>
+        <br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, placeat quo. Odit quod non illum quisquam necessitatibus, minus distinctio asperiores doloribus ipsam, autem animi ea adipisci quos laborum dignissimos totam?
+        Dolorem vitae reiciendis exercitationem voluptatibus quidem amet temporibus nihil libero tenetur commodi numquam dicta veniam voluptatum atque animi, perferendis iure voluptas nemo reprehenderit laboriosam laborum, distinctio maiores. Esse, non harum.
+        Corporis, libero pto aperiam repellat officiis, cum voluptates, ea consectetur nulla nam rem qui maxime eligendi ipsam, voluptate sapiente vitae. Et consectetur assumenda cum ea.
+        Similique magni repellat quis dignissimos nesciunt maxime maiores qui aspernatur sit harum provident perferendis illo necessitatibus earum natus, ea voluptate asperiores a architecto, fugit labore! A magni dolor iure natus.
+    </main>
+
+</body>
+
+</html>

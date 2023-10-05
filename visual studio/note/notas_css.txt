@@ -1,0 +1,27 @@
+Imagen fondo
+    - poner de fondo una imagen.
+
+        background-imagen; url();
+
+    -cambiar pocision de la imagen de fondo
+
+        background-position: bottom;       #abajo
+        background-position: center;       #centro
+        background-position: left;         #izquierda
+        background-position: right;        #derecha
+        background-position: top;          #arriba
+
+    -Cambiar el tamaño del fondo
+    Sin importar la opción que usemos, background-position no muestra correctamente la imagen, esto empeora si cambiamos de tamaño la ventana
+
+        background-size: auto;            # ajuste automatico
+        background-size: contain;         # escalar sin recortar
+        background.size: cover;           # escalar y recortar
+
+        y cambiamos la pocision a center
+
+        background-pocision: center;
+
+    -Fijar la imagen de fondo
+
+        background-attachment: fixed;

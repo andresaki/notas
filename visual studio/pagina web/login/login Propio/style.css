@@ -1,0 +1,66 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+body{
+    align-items: center;
+    background: linear-gradient(320deg, hsl(263, 74%, 56%),#78a7ff, #63c9b2);
+    display: flex;
+    font-family: 'Dosis', sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+}
+
+.login
+{
+    background-color:rgba(69, 26, 188, 0.781) ;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+}
+
+.titulo
+{
+    text-align: center;
+    padding-bottom: 8px;.
+    color: azure;
+}
+
+input
+{
+    text-align: justify;
+    width: 300px;
+    margin: 7px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background: #ef900a;
+    color: #fff;
+}
+
+.texto_input
+{
+    line-height: 0px;
+    margin: 8px;
+}
+
+.email
+{
+    margin-bottom: 35px;
+}
+
+#button_l{
+    
+    background: rgb(29, 130, 231);
+    border: none;
+    padding: 10px 23px;
+    margin-top: 18PX;
+}
+
+hr{
+    background: #21db72;
+    height: 2px;
+}

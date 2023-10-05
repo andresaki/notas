@@ -1,0 +1,53 @@
+body{
+    font-family: sans-serif; /*fuente*/
+    margin: 0;               /*para que no deje un espacio, se pega en la esquinas*/
+    color: aliceblue;     /*color letra*/
+
+}
+
+header{
+    display: flex;   /*pone los elementos como en cuadrillas*/
+    min-height: 80px; /*altura minima de un elemento*/
+    background-color: rgb(15, 15, 48); /*color de cuadro en este caso el ancabezado*/
+    justify-content: space-between; 
+    align-items: center;
+    padding:10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 60px;
+    margin-left: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+/*movimiento cunado pasa el mouse en el link*/
+nav a:hover{
+    color: aqua;
+    font-size: 19px;
+
+}
+
+
+/*pantalla celular ajuste*/
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px ;
+    }
+}

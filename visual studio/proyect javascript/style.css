@@ -1,0 +1,35 @@
+body{
+    /* color de fondo */
+    background: rgb(10, 11, 59); 
+
+    /* color de letra */
+    color: aqua;
+
+    /* tipo de fuente */
+    font-family: monospace;
+    font-size: 17px;
+}
+
+h3{
+    color: aqua;
+}
+#contenido_1{
+    color:white;
+    padding-left: 10px;
+}
+
+.CONATINER_1{
+    border-color: aqua;
+    border-width: 2px;
+    border-style: solid;
+    background: rgba(99, 165, 143, 0.384);
+
+    padding-left: 20px;
+}
+header {   
+
+    position: sticky;   
+
+    top: 0; 
+
+}

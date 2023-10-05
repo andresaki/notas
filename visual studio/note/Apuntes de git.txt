@@ -1,0 +1,21 @@
+Git
+
+    Git es un software de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia, la confiabilidad y compatibilidad del mantenimiento de versiones de aplicaciones cuando estas tienen un gran número de archivos de código fuente.
+
+configuracion global de git
+
+    saber si tiene instalado git y cual version
+    $ git --version                          
+
+    $ git config --global user.name "NameUser"  
+    $ git config --global user.email user@example.com  
+
+    abrir archivo de .gitconfig
+    $ git config --global -e
+
+$ git status    -->     saber si hay commits , archivos agregados , archivos modificados
+
+$ git add nombreArchivo     -->  agregar un archivo a la esta status
+$ git add .                 -->  agregar todos los archivos
+
+$ git commit -m "mensaje"   --> confirma un conjunto de cambios provicionales permanente (archivos agregados)

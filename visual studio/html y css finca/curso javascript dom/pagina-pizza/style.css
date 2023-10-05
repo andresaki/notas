@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   /*le dice como va a calcular el ancho del elemento*/
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background: url(image/920308\ -\ copia.jpg) no-repeat center/cover;
+}
+
+/* contenedor */
+
+#contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    width: 80vh;
+    max-width: 600px;
+    background-color: white;
+    /* background-color: transparent ;
+    backdrop-filter: blur(10px);    efecto borroso */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 3rem;
+    width: 100%;
+    margin: 20px 10px;
+}
+
+ul{
+    width: 80%;
+    height: 100%;
+}
+
+.topping{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+.fondo-marron{
+    background-color: darkred;
+}
+
+.fondo-naranja{
+    background-color: goldenrod;
+}

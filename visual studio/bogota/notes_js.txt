@@ -1,0 +1,259 @@
+JAVASCRIPT 
+
+- Comentarios
+    //  conmentario de una linea  
+
+    /*  comentario de 
+     varias lineas   */
+
+- Tipos de datos
+    undefined          --   no definido
+    null               --   vacio
+    boolean            --   verdadero/falso
+    string             --   cadena de caracteres
+    symbol             --   
+    number             --   numeros (float enteros)
+    object             --
+
+- Variables
+    var: se utiliza para declarar una variable y adicionalmente se puede inicializar el valor de esta variable. Por ejemplo: *var i = 0* . Podemos decir que: Las variables declaradas con var son procesadas antes de la ejecución del código.
+
+    - Declaracion
+        var numero = 234545;
+
+- Imprimir en consola
+    console.log()
+
+- Incrementacion y decrecion
+
+    i++         --  incrementacion
+    i--         --  decrecion
+
+    ejemplo: 
+
+    var librosvendidos = 16;  
+
+    librosvendidos++                          ->  incrementa a 17
+    librosvendidos = librosvendidos +  1      ->  incrementa a 18
+    libros += 2                               -> incrementa a 20
+
+    libros -= 2                               -> decrece a 18
+
+    numero *= 2
+    numero /= 3
+
+- Cadena de caracteres con comillas
+    no se puede tener 4 comillas doble dentro de un string
+
+    miMeta = "aprender a programar con "freecodecamp" "  ==>  ✗ ERROR
+
+    miMeta = "aprender a programar con \"freecodecamp\" " ==>  ✓ dificil de leer
+
+    miMeta = "aprender a programar con \"freecodecamp\" " ==>  ✓ bien
+
+- Secunecias de escape
+    
+        codigo       |      resultado
+    _________________|____________________
+      \'             |  comilla simple
+      \"             |  comilla doble
+      \\             |  barra invertida
+      \n             |  linea nueva
+      \r             |  retorno de carro
+      \t             |  tabulacion
+      \b             |  retroceso
+      \f             |  salto de pagina
+
+- Concatenacion de cadenas
+    " estoy aprendiendo a " + "programar"
+
+    "estudiante " + nombre
+
+- longitud de una cadena de caracteres
+
+    miCadena = "apartamento"
+    console.log(miCadena.length)             // 11
+
+- aceder a un caracter de un string
+    
+    var cadena = "javaScript"
+
+    cadena:  j a v a s c r i p t 
+    indices: 0 1 2 3 4 5 6 7 8 9
+
+    console.log(cadena[0])    = j 
+    consola-log(cadena[4])    = s
+
+    acceeder al ultimo caracter de la cadena
+    console.log(cadena[cadena.length - 1])
+
+- array
+    ~ podemos guardar varios datos en un solo espacio
+        const sandwich = ["jamon" , " pan" , " queso" , "salsa"]
+        const estudiantes = [ "dannna salome" , "sofia" , "sara"]
+
+    ~ tambien se puede anidar arreglos dentro de un arreglos
+        const equipos = [[1, "salud"] , [2 , "mediacamentos"] , [3, "atencion"]]
+
+    ~ acceder a un elemeto de un array
+        estudiantes[0]   //danna salome
+
+    ~ modificar un elemento de un array
+        estudiante[0] = "laura"   
+
+    ~ acceder a un elemeto de un array anidado
+        const arr = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9],
+            [[10, 11, 12], 13, 14]
+        ];
+
+        const subarray = arr[3];
+        const nestedSubarray = arr[3][0];
+        const element = arr[3][0][1];
+
+        En este ejemplo, subarray tiene el valor [[10, 11, 12], 13, 14], nestedSubarray tiene el valor [10, 11, 12], y element tiene el valor 11.
+
+    ~ eliminar el ultimo elemento de un array
+        estudiantes.pop()
+
+    ~ eliminar el primer elemnto de un array
+        estudiantes.shift()
+    
+    ~ poner un dato en la ultima pocision
+        estudiantes.pop("daniel")
+
+    ~ poner un dato en la primera pocision
+        estudiantes.unshift("daniel")
+        
+- funciones
+    son trozos de codigo en el cual se ejecuta cundo queramos
+
+    ~ Funcion Tradicional
+        se puede llamar en cualquier lugar
+
+            function nombre_de_la _funcion (parametros){
+                codigo
+            }
+
+        ejemplo:
+            function saludar(nombre){
+                console.log("bienvanido al sistema" + nombre)
+            }
+
+            saludar("daniel")        <-->   llamando al funcion
+
+    ~ Funcion Anonima
+        no tiene nombre nombre, las creamos para que se ejecute hay mismo
+        se guarda en una variable
+
+        let saludo  = function (){
+            return "hola";
+        }
+
+    ~ Funcion Flecha
+        ya no necesitamos la palbra function 
+
+        const saludo2 = (nombre) => {
+            return "hola" + nombre;
+        }
+
+        console.log( saludo2("sofia"))
+
+    ~ Funciones predefinida
+        no se necesitan nada para ser llamadas, no la tenemos que hacer
+
+        parseInt()              decodeURI()
+        parseFloat()            encodeURIComponent()
+        isNan()                 decodeURIComponet()
+        isFinity()              eval()
+        encodeURI()             "Entre otras muchas mas"
+
+    ~ Funciones de auto-invocacion 1
+
+        (
+            function(){
+                alert()
+            }
+        )()
+
+        con parametros
+
+        (
+            function(nombre){
+                alert("hola" + nombre)
+            }
+        )("cecilia")
+
+    ~ Funciones dentro de funciones
+
+        funcion que retorna otra funcion
+
+        function a(){
+            alert("hola")
+            return function(){
+                return alert("mok")
+            }
+        }
+
+        a()     <-->    solo retorna funcion a  (hola)
+        a()()   <-->    retorna func a y anonima (hola) y (mok)
+
+    ~ llamados call
+        
+        function sumar(a, b){
+            return a + b;
+        }
+
+        var resultado = sumar.call (resultado , 9 , 4);   //resultado === 13
+
+    ~ llamdos apply
+
+        function sumar(a, b){
+            return a + b;
+        }
+
+        var resultado = sumar.apply (resultado , [10 , 5] );   //resultado === 15
+
+- import y export
+
+    se utiliza para intercabiar funciones datos etc
+
+    - importacion normal
+        export    ===> se pone el archivo externo al principio
+        import {'variable'} from ruta  ===> en el main
+
+    - importacion por defecto
+        1. export default 'variable'  ===> al final del archivo
+           import variable from ruta ==> main
+
+        2. no declarar variable embes de eso se le pone <== export defaul al principio
+           import variable from ruta ==> main
+
+    - import / export individual
+        se le pone export antes de la variablet y se importa de la siguiente manera
+
+        import variable {variable} from ruta
+                    |       | 
+                defaul     individual
+
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
